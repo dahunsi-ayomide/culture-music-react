@@ -1,0 +1,95 @@
+.productCard {
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px 10px 100px rgba(44, 44, 44, 0.1);
+}
+
+.cardImg {
+  overflow: hidden;
+  
+  height: 278px;
+}
+
+.cardImg img {
+  width: 100%;
+  
+}
+
+.cardInfo {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.cardInfo p {
+  text-align: left;
+  color: #666;
+}
+
+.cardInfo button {
+  height: 40px;
+  width: 100%; 
+  color: #fff;
+  background-color: #ff753a;
+  border-radius: 32px;
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardInfo button:hover {
+  background-color: darkorange;
+}
+
+.namePrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.namePrice h3 {
+  margin: 0;
+  color: #444;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) { /* For screens smaller than 768px (mobile) */
+  .productCard {
+    /* Consider reducing border-radius for better rendering */
+  }
+
+  .cardImg {
+    width: 100%; /* Set image width to 100% for mobile */
+  }
+
+  .cardInfo {
+    padding: 16px; /* Reduce padding for mobile */
+  }
+
+  .cardInfo button {
+    width: auto; /* Allow button to fit content on mobile */
+    padding: 8px 32px; /* Adjust button padding for mobile */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* For screens between 768px and 1024px (tablet) */
+  .productCard {
+    /* Adjust styles for a more compact layout on tablet if needed */
+  }
+
+  .cardImg {
+    width: 60%; /* Adjust image width for tablet */
+  }
+
+  .cardInfo button {
+    padding: 10px 24px; /* Adjust button padding for tablet */
+  }
+}

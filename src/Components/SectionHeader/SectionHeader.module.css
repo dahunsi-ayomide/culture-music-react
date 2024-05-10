@@ -1,0 +1,12 @@
+.sectionHeader {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .rectangle {
+    width: 80px;
+    height: 4px;
+    background-color: #AB0433;
+  }
+  

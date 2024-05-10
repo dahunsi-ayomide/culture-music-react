@@ -1,0 +1,59 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../../assets/unsplash_nRDFR-W7CEI.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .heroTitle{
+    color: white;
+    top: 220px;
+    position: absolute;
+    text-align: left;
+    font-size: 64px;
+    line-height: 140%;
+
+}
+   
+
+
+.heroTitle {
+  color: white;
+  top: 220px;
+  position: absolute;
+  text-align: left;
+  font-size: 64px;
+  line-height: 140%;
+}
+
+
+
+@media screen and (max-width: 768px) { 
+  .hero {
+    height: 720px; 
+    padding: 24px; 
+  }
+
+  .heroTitle {
+    font-size: 40px; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  .hero {
+    padding: 64px; 
+  }
+
+  .heroTitle {
+    font-size: 56px; 
+  }
+}
+
+  

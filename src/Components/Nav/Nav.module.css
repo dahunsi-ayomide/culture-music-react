@@ -1,0 +1,89 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.navLinks {
+  display: flex;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease;
+  /* Removed initial height: 0; for better rendering */
+}
+
+.navLinks.showNavLinks { /* Style for open menu */
+  display: flex;
+  height: auto; /* Allow content to expand */
+  transition: all 0.3s ease;
+}
+
+.navLinks li {
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffbf00;
+}
+
+.navIcons {
+  display: flex;
+  color: #fff;
+  width: 223px;
+  justify-content: flex-end;
+}
+
+.navIcons {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.navIcons img {
+  width: 16px;
+  height: 16px;
+}
+
+.hamburgerBtn { /* Styles for hamburger button */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* For screens smaller than 768px */
+  .navLinks {
+    display: none; /* Completely removes navigation links */
+  }
+
+  .hamburgerBtn {
+    display: flex; /* Show hamburger menu */
+  }
+}

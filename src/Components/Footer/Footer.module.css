@@ -1,0 +1,85 @@
+.footer {
+  background-color: #5f1d00;
+  color: #fff;
+  padding: 40px 88px; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.myAccount {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.leftColumn {
+  display: flex;
+  gap: 240px; 
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo {
+  margin-left: 20px;
+  height: 32px;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.socialIcons {
+  margin-left: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) { 
+  .footer {
+    padding: 24px 16px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .leftColumn {
+    gap: 40px; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  .footer {
+    padding: 32px 48px; 
+  }
+
+  .leftColumn {
+    gap: 128px; 
+  }
+}
