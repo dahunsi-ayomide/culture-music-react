@@ -28,6 +28,8 @@
     gap: 24px; /* Reduce gap between articles on mobile */
     padding-left: 16px;
     padding-right: 16px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

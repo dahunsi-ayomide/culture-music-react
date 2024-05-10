@@ -34,7 +34,7 @@
 @media screen and (max-width: 768px) { /* For screens smaller than 768px (mobile) */
   .articleCardSm {
     margin-bottom: 24px; /* Add spacing between cards on mobile */
-    width: 343 px;
+    width: 100% px;
   }
 
   .articleImgSm {
